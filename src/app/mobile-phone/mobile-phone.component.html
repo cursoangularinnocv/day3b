@@ -1,0 +1,7 @@
+<div>
+  <h4>{{productName}}</h4>
+  <img [src]="productImage" alt="" height="100">
+  <p>Price: {{price | currency:'EUR'}}</p>
+
+  <button *ngIf="isActive" (click)="buyThisPhone()">Buy this phone</button>
+</div>
